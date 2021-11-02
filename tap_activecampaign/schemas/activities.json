@@ -1,6 +1,7 @@
 {
   "type": "object",
   "additionalProperties": false,
+  "selected": true,
   "properties": {
     "tstamp": {
       "type": ["null", "string"],

@@ -351,6 +351,7 @@ def sync(client, config, catalog, state):
     LOGGER.info('selected_streams: {}'.format(selected_streams))
 
     if not selected_streams or selected_streams == []:
+        LOGGER.info('~~~~~Made it to sync.py empty stream if statement~~~~~')
         return
 
     # Loop through endpoints in selected_streams

@@ -38,8 +38,10 @@ def main():
             state = parsed_args.state
 
         if parsed_args.discover:
+            LOGGER.info('~~~~~Made it to init.py if statement~~~~~')
             do_discover()
         elif parsed_args.catalog:
+            LOGGER.info('~~~~~Made it to init.py else statement~~~~~')
             sync(client=client,
                  config=parsed_args.config,
                  catalog=parsed_args.catalog,

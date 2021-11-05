@@ -26,7 +26,7 @@ def do_discover():
 
 @singer.utils.handle_top_exception(LOGGER)
 def main():
-
+    LOGGER.info('~~~~~Made it to init.py main~~~~~')
     parsed_args = singer.utils.parse_args(REQUIRED_CONFIG_KEYS)
 
     with ActiveCampaignClient(parsed_args.config['api_url'],

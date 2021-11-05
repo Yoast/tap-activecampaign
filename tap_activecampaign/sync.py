@@ -340,7 +340,7 @@ def update_currently_syncing(state, stream_name):
 
 def sync(client, config, catalog, state):
     start_date = config.get('start_date')
-
+    LOGGER.info('~~~~~Made it to sync.py beginning~~~~~')
     # Get selected_streams from catalog, based on state last_stream
     #   last_stream = Previous currently synced stream, if the load was interrupted
     last_stream = singer.get_currently_syncing(state)
@@ -356,6 +356,7 @@ def sync(client, config, catalog, state):
 
     # Loop through endpoints in selected_streams
     for stream_name, endpoint_config in STREAMS.items():
+        LOGGER.info('~~~~~Made it to sync.py for loop~~~~~')
         if stream_name in selected_streams:
             LOGGER.info('START Syncing: {}'.format(stream_name))
             write_schema(catalog, stream_name)

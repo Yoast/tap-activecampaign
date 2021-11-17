@@ -1,7 +1,6 @@
 {
   "type": "object",
   "additionalProperties": false,
-  "selected": true,
   "properties": {
     "name": {
       "type": ["null", "string"]

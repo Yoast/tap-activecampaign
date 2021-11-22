@@ -6,11 +6,15 @@ from tap_activecampaign.streams import flatten_streams
 LOGGER = singer.get_logger()
 
 def discover():
+    LOGGER.info('~~~~~Made it to discover.py discover function head~~~~~')
     schemas, field_metadata = get_schemas()
+    LOGGER.info('~~~~~Made it to discover.py after get_schemas call~~~~~')
     catalog = Catalog([])
+    LOGGER.info('~~~~~Made it to discover.py after catalog call~~~~~')
 
     flat_streams = flatten_streams()
     for stream_name, schema_dict in schemas.items():
+        LOGGER.info('~~~~~Made it to discover.py inside flatten_streams for loop~~~~~')
         try:
             schema = Schema.from_dict(schema_dict)
             mdata = field_metadata[stream_name]

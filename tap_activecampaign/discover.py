@@ -16,9 +16,11 @@ def discover():
     for stream_name, schema_dict in schemas.items():
         LOGGER.info('~~~~~Made it to discover.py inside flatten_streams for loop~~~~~')
         try:
+            LOGGER.info('~~~~~Made it to discover.py inside flatten_streams try~~~~~')
             schema = Schema.from_dict(schema_dict)
             mdata = field_metadata[stream_name]
         except Exception as err:
+            LOGGER.info('~~~~~Made it to discover.py inside flatten_streams except~~~~~')
             LOGGER.error(err)
             LOGGER.error('stream_name: {}'.format(stream_name))
             LOGGER.error('type schema_dict: {}'.format(type(schema_dict)))

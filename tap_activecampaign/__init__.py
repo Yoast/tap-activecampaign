@@ -40,7 +40,11 @@ def main():
 
         if parsed_args.discover:
             LOGGER.info('~~~~~Made it to init.py discocver if statement~~~~~')
-            do_discover()
+            discovered_catalog = do_discover()
+            sync(client=client,
+                 config=parsed_args.config,
+                 catalog=discovered_catalog,
+                 state=state)
         elif parsed_args.catalog:
             LOGGER.info('~~~~~Made it to init.py else catalog statement~~~~~')
             sync(client=client,

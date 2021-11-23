@@ -21,6 +21,7 @@ def do_discover():
     LOGGER.info('Starting discover')
     catalog = discover()
     LOGGER.info('~~~~~Made it out of discover function call~~~~~')
+    LOGGER.info('catalog data: {}'.format(catalog))
     json.dump(catalog.to_dict(), sys.stdout, indent=2)
     LOGGER.info('Finished discover')
 

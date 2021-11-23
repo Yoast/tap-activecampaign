@@ -27,6 +27,7 @@ def discover():
             raise err
 
         catalog.streams.append(CatalogEntry(
+            LOGGER.info('~~~~~Made it to discover.py catalog.streams.append~~~~~')
             stream=stream_name,
             tap_stream_id=stream_name,
             key_properties=flat_streams.get(stream_name, {}).get('key_properties', None),

@@ -22,8 +22,10 @@ def do_discover():
     catalog = discover()
     LOGGER.info('~~~~~Made it out of discover function call~~~~~')
     LOGGER.info('catalog data: {}'.format(catalog))
-    json.dump(catalog.to_dict(), sys.stdout, indent=2)
+    # json.dump(catalog.to_dict(), sys.stdout, indent=2)
+    catalog_string = json.dumps(catalog.to_dict(), indent=2)
     LOGGER.info('Finished discover')
+    return catalog_string
 
 
 @singer.utils.handle_top_exception(LOGGER)

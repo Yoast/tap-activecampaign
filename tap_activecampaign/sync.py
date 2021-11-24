@@ -345,7 +345,7 @@ def sync(client, config, catalog, state):
     #   last_stream = Previous currently synced stream, if the load was interrupted
     last_stream = singer.get_currently_syncing(state)
     LOGGER.info('last/currently syncing stream: {}'.format(last_stream))
-    selected_streams = []
+    selected_streams = ["account_contacts"]
     for stream in catalog.get_selected_streams(state):
         selected_streams.append(stream.stream)
     LOGGER.info('selected_streams: {}'.format(selected_streams))

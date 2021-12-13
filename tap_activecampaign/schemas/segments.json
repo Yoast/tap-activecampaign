@@ -1,35 +1,36 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "name": {
-      "type": ["null", "string"]
-    },
-    "logic": {
-      "type": ["null", "string"]
-    },
-    "hidden": {
-      "type": ["null", "integer"]
-    },
-    "seriesid": {
-      "type": ["null", "integer"]
-    },
-    "created_timestamp": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "updated_timestamp": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "created_by": {
-      "type": ["null", "integer"]
-    },
-    "updated_by": {
-      "type": ["null", "integer"]
-    },
-    "id": {
-      "type": ["null", "integer"]
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "type": ["null", "string"]
+      },
+      "logic": {
+        "type": ["null", "string"]
+      },
+      "hidden": {
+        "type": ["null", "number"]
+      },
+      "seriesid": {
+        "type": ["null", "number"]
+      },
+      "created_timestamp": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "updated_timestamp": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "created_by": {
+        "type": ["null", "number"]
+      },
+      "updated_by": {
+        "type": ["null", "number"]
+      },
+      "id": {
+        "type": ["null", "number"]
+      }
     }
   }
-}
+  

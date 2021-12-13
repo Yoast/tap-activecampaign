@@ -6,37 +6,37 @@
       "type": ["null", "string"]
     },
     "userid": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "segmentid": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "bounceid": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "realcid": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "sendid": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "threadid": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "seriesid": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "formid": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "basetemplateid": {
       "type": ["null", "string"]
     },
     "basemessageid": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "addressid": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "source": {
       "type": ["null", "string"]
@@ -69,106 +69,106 @@
       "format": "date-time"
     },
     "send_amt": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "total_amt": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "opens": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "uniqueopens": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "linkclicks": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "uniquelinkclicks": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "subscriberclicks": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "forwards": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "uniqueforwards": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "hardbounces": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "softbounces": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "unsubscribes": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "unsubreasons": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "updates": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "socialshares": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "replies": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "uniquereplies": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "status": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "public": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "mail_transfer": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "mail_send": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "mail_cleanup": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "mailer_log_file": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "tracklinks": {
       "type": ["null", "string"]
     },
     "tracklinksanalytics": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "trackreads": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "trackreadsanalytics": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "analytics_campaign_name": {
       "type": ["null", "string"]
     },
     "tweet": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "facebook": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "survey": {
       "type": ["null", "string"]
     },
     "embed_images": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "htmlunsub": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "textunsub": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "htmlunsubdata": {
       "type": ["null", "string"]
@@ -180,34 +180,34 @@
       "type": ["null", "string"]
     },
     "willrecur": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "split_type": {
       "type": ["null", "string"]
     },
     "split_content": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "split_offset": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "split_offset_type": {
       "type": ["null", "string"]
     },
     "split_winner_messageid": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "split_winner_awaiting": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "responder_offset": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "responder_type": {
       "type": ["null", "string"]
     },
     "responder_existing": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "reminder_field": {
       "type": ["null", "string"]
@@ -219,7 +219,7 @@
       "type": ["null", "string"]
     },
     "reminder_offset": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "reminder_offset_type": {
       "type": ["null", "string"]
@@ -237,7 +237,7 @@
       "type": ["null", "string"]
     },
     "activerss_items": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "ip4": {
       "type": ["null", "string"]
@@ -246,32 +246,32 @@
       "type": ["null", "string"]
     },
     "managetext": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "schedule": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "scheduleddate": {
       "type": ["null", "string"]
     },
     "waitpreview": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "deletestamp": {
       "type": ["null", "string"],
       "format": "date-time"
     },
     "replysys": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "id": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "user": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     },
     "automation": {
-      "type": ["null", "integer"]
+      "type": ["null", "number"]
     }
   }
 }

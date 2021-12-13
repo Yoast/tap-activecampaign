@@ -1,52 +1,53 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "messageid": {
-      "type": ["null", "integer"]
-    },
-    "seriesid": {
-      "type": ["null", "integer"]
-    },
-    "messageheader": {
-      "type": ["null", "string"]
-    },
-    "userid": {
-      "type": ["null", "integer"]
-    },
-    "d_id": {
-      "type": ["null", "integer"]
-    },
-    "subscriberid": {
-      "type": ["null", "integer"]
-    },
-    "account": {
-      "type": ["null", "integer"]
-    },
-    "ip": {
-      "type": ["null", "string"]
-    },
-    "sdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "source": {
-      "type": ["null", "string"]
-    },
-    "id": {
-      "type": ["null", "integer"]
-    },
-    "user": {
-      "type": ["null", "integer"]
-    },
-    "deal": {
-      "type": ["null", "integer"]
-    },
-    "contact": {
-      "type": ["null", "integer"]
-    },
-    "message": {
-      "type": ["null", "integer"]
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "messageid": {
+        "type": ["null", "number"]
+      },
+      "seriesid": {
+        "type": ["null", "number"]
+      },
+      "messageheader": {
+        "type": ["null", "string"]
+      },
+      "userid": {
+        "type": ["null", "number"]
+      },
+      "d_id": {
+        "type": ["null", "number"]
+      },
+      "subscriberid": {
+        "type": ["null", "number"]
+      },
+      "account": {
+        "type": ["null", "number"]
+      },
+      "ip": {
+        "type": ["null", "string"]
+      },
+      "sdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "source": {
+        "type": ["null", "string"]
+      },
+      "id": {
+        "type": ["null", "number"]
+      },
+      "user": {
+        "type": ["null", "number"]
+      },
+      "deal": {
+        "type": ["null", "number"]
+      },
+      "contact": {
+        "type": ["null", "number"]
+      },
+      "message": {
+        "type": ["null", "number"]
+      }
     }
   }
-}
+  

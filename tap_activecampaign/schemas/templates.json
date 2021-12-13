@@ -1,55 +1,56 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "userid": {
-      "type": ["null", "integer"]
-    },
-    "ed_instanceid": {
-      "type": ["null", "integer"]
-    },
-    "ed_version": {
-      "type": ["null", "integer"]
-    },
-    "name": {
-      "type": ["null", "string"]
-    },
-    "subject": {
-      "type": ["null", "string"]
-    },
-    "contant": {
-      "type": ["null", "string"]
-    },
-    "categoryid": {
-      "type": ["null", "integer"]
-    },
-    "used": {
-      "type": ["null", "integer"]
-    },
-    "waitpreview": {
-      "type": ["null", "integer"]
-    },
-    "importnum": {
-      "type": ["null", "integer"]
-    },
-    "mdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "preview_content": {
-      "type": ["null", "string"]
-    },
-    "modified": {
-      "type": ["null", "integer"]
-    },
-    "hidden": {
-      "type": ["null", "integer"]
-    },
-    "screenshot": {
-      "type": ["null", "string"]
-    },
-    "id": {
-      "type": ["null", "integer"]
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "userid": {
+        "type": ["null", "number"]
+      },
+      "ed_instanceid": {
+        "type": ["null", "number"]
+      },
+      "ed_version": {
+        "type": ["null", "number"]
+      },
+      "name": {
+        "type": ["null", "string"]
+      },
+      "subject": {
+        "type": ["null", "string"]
+      },
+      "contant": {
+        "type": ["null", "string"]
+      },
+      "categoryid": {
+        "type": ["null", "number"]
+      },
+      "used": {
+        "type": ["null", "number"]
+      },
+      "waitpreview": {
+        "type": ["null", "number"]
+      },
+      "importnum": {
+        "type": ["null", "number"]
+      },
+      "mdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "preview_content": {
+        "type": ["null", "string"]
+      },
+      "modified": {
+        "type": ["null", "number"]
+      },
+      "hidden": {
+        "type": ["null", "number"]
+      },
+      "screenshot": {
+        "type": ["null", "string"]
+      },
+      "id": {
+        "type": ["null", "number"]
+      }
     }
   }
-}
+  

@@ -1,60 +1,61 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "contact": {
-      "type": ["null", "integer"]
-    },
-    "seriesid": {
-      "type": ["null", "integer"]
-    },
-    "startid": {
-      "type": ["null", "integer"]
-    },
-    "status": {
-      "type": ["null", "integer"]
-    },
-    "batchid": {
-      "type": ["null", "string"]
-    },
-    "adddate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "remdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "timespan": {
-      "type": ["null", "integer"]
-    },
-    "lastblock": {
-      "type": ["null", "integer"]
-    },
-    "lastlogid": {
-      "type": ["null", "integer"]
-    },
-    "lastdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "completed_elements": {
-      "type": ["null", "integer"]
-    },
-    "total_elements": {
-      "type": ["null", "integer"]
-    },
-    "completed": {
-      "type": ["null", "integer"]
-    },
-    "complete_value": {
-      "type": ["null", "integer"]
-    },
-    "id": {
-      "type": ["null", "integer"]
-    },
-    "automation": {
-      "type": ["null", "integer"]
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "contact": {
+        "type": ["null", "number"]
+      },
+      "seriesid": {
+        "type": ["null", "number"]
+      },
+      "startid": {
+        "type": ["null", "number"]
+      },
+      "status": {
+        "type": ["null", "number"]
+      },
+      "batchid": {
+        "type": ["null", "string"]
+      },
+      "adddate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "remdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "timespan": {
+        "type": ["null", "number"]
+      },
+      "lastblock": {
+        "type": ["null", "number"]
+      },
+      "lastlogid": {
+        "type": ["null", "number"]
+      },
+      "lastdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "completed_elements": {
+        "type": ["null", "number"]
+      },
+      "total_elements": {
+        "type": ["null", "number"]
+      },
+      "completed": {
+        "type": ["null", "number"]
+      },
+      "complete_value": {
+        "type": ["null", "number"]
+      },
+      "id": {
+        "type": ["null", "number"]
+      },
+      "automation": {
+        "type": ["null", "number"]
+      }
     }
   }
-}
+  

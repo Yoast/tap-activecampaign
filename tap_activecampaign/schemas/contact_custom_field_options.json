@@ -1,32 +1,33 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "field": {
-      "type": ["null", "integer"]
-    },
-    "orderid": {
-      "type": ["null", "integer"]
-    },
-    "value": {
-      "type": ["null", "string"]
-    },
-    "label": {
-      "type": ["null", "string"]
-    },
-    "isdefault": {
-      "type": ["null", "integer"]
-    },
-    "cdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "udate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "id": {
-      "type": ["null", "integer"]
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "field": {
+        "type": ["null", "number"]
+      },
+      "orderid": {
+        "type": ["null", "number"]
+      },
+      "value": {
+        "type": ["null", "string"]
+      },
+      "label": {
+        "type": ["null", "string"]
+      },
+      "isdefault": {
+        "type": ["null", "number"]
+      },
+      "cdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "udate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "id": {
+        "type": ["null", "number"]
+      }
     }
   }
-}
+  

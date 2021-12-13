@@ -1,33 +1,34 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "title": {
-      "type": ["null", "string"]
-    },
-    "subject": {
-      "type": ["null", "string"]
-    },
-    "body": {
-      "type": ["null", "string"]
-    },
-    "ldate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "last_sent_user_id": {
-      "type": ["null", "integer"]
-    },
-    "cdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "mdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "id": {
-      "type": ["null", "integer"]
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": ["null", "string"]
+      },
+      "subject": {
+        "type": ["null", "string"]
+      },
+      "body": {
+        "type": ["null", "string"]
+      },
+      "ldate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "last_sent_user_id": {
+        "type": ["null", "number"]
+      },
+      "cdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "mdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "id": {
+        "type": ["null", "number"]
+      }
     }
   }
-}
+  

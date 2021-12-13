@@ -1,35 +1,36 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "contact": {
-      "type": ["null", "integer"]
-    },
-    "field": {
-      "type": ["null", "integer"]
-    },
-    "value": {
-      "type": ["null", "string"]
-    },
-    "cdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "udate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "id": {
-      "type": ["null", "integer"]
-    },
-    "owner": {
-      "type": ["null", "integer"]
-    },
-    "created_by": {
-      "type": ["null", "integer"]
-    },
-    "updated_by": {
-      "type": ["null", "integer"]
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "contact": {
+        "type": ["null", "number"]
+      },
+      "field": {
+        "type": ["null", "number"]
+      },
+      "value": {
+        "type": ["null", "string"]
+      },
+      "cdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "udate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "id": {
+        "type": ["null", "number"]
+      },
+      "owner": {
+        "type": ["null", "number"]
+      },
+      "created_by": {
+        "type": ["null", "number"]
+      },
+      "updated_by": {
+        "type": ["null", "number"]
+      }
     }
   }
-}
+  

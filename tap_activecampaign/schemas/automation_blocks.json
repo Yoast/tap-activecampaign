@@ -1,34 +1,35 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "automation": {
-      "type": ["null", "integer"]
-    },
-    "parent": {
-      "type": ["null", "integer"]
-    },
-    "ordernum": {
-      "type": ["null", "integer"]
-    },
-    "params": {
-      "type": ["null", "object"],
-      "additionalProperties": true,
-      "properties": {}
-    },
-    "deleted": {
-      "type": ["null", "integer"]
-    },
-    "cdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "mdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "id": {
-      "type": ["null", "integer"]
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "automation": {
+        "type": ["null", "number"]
+      },
+      "parent": {
+        "type": ["null", "number"]
+      },
+      "ordernum": {
+        "type": ["null", "number"]
+      },
+      "params": {
+        "type": ["null", "object"],
+        "additionalProperties": true,
+        "properties": {}
+      },
+      "deleted": {
+        "type": ["null", "number"]
+      },
+      "cdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "mdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "id": {
+        "type": ["null", "number"]
+      }
     }
   }
-}
+  

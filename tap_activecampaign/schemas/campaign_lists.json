@@ -1,41 +1,41 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "campaignid": {
-      "type": ["null", "integer"]
-    },
-    "listid": {
-      "type": ["null", "integer"]
-    },
-    "userid": {
-      "type": ["null", "integer"]
-    },
-    "list_amt": {
-      "type": ["null", "integer"]
-    },
-    "cdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "udate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "name": {
-      "type": ["null", "string"]
-    },
-    "id": {
-      "type": ["null", "integer"]
-    },
-    "user": {
-      "type": ["null", "integer"]
-    },
-    "list": {
-      "type": ["null", "integer"]
-    },
-    "campaign": {
-      "type": ["null", "integer"]
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "campaignid": {
+        "type": ["null", "number"]
+      },
+      "listid": {
+        "type": ["null", "number"]
+      },
+      "userid": {
+        "type": ["null", "number"]
+      },
+      "list_amt": {
+        "type": ["null", "number"]
+      },
+      "cdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "udate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "name": {
+        "type": ["null", "string"]
+      },
+      "id": {
+        "type": ["null", "number"]
+      },
+      "user": {
+        "type": ["null", "number"]
+      },
+      "list": {
+        "type": ["null", "number"]
+      },
+      "campaign": {
+        "type": ["null", "number"]
+      }
     }
   }
-}

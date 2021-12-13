@@ -1,32 +1,33 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "title": {
-      "type": ["null", "string"]
-    },
-    "type": {
-      "type": ["null", "string"]
-    },
-    "userid": {
-      "type": ["null", "integer"]
-    },
-    "notification": {
-      "type": ["null", "integer"]
-    },
-    "cdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "mdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "token": {
-      "type": ["null", "string"]
-    },
-    "id": {
-      "type": ["null", "integer"]
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": ["null", "string"]
+      },
+      "type": {
+        "type": ["null", "string"]
+      },
+      "userid": {
+        "type": ["null", "number"]
+      },
+      "notification": {
+        "type": ["null", "number"]
+      },
+      "cdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "mdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "token": {
+        "type": ["null", "string"]
+      },
+      "id": {
+        "type": ["null", "number"]
+      }
     }
   }
-}
+  

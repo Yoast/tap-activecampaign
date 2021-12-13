@@ -1,53 +1,54 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "title": {
-      "type": ["null", "string"]
-    },
-    "descript": {
-      "type": ["null", "string"]
-    },
-    "type": {
-      "type": ["null", "string"]
-    },
-    "isrequired": {
-      "type": ["null", "integer"]
-    },
-    "perstag": {
-      "type": ["null", "string"]
-    },
-    "defvalue": {
-      "type": ["null", "string"]
-    },
-    "show_in_list": {
-      "type": ["null", "integer"]
-    },
-    "rows": {
-      "type": ["null", "integer"]
-    },
-    "cols": {
-      "type": ["null", "integer"]
-    },
-    "visible": {
-      "type": ["null", "integer"]
-    },
-    "service": {
-      "type": ["null", "string"]
-    },
-    "ordernum": {
-      "type": ["null", "integer"]
-    },
-    "cdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "udate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "id": {
-      "type": ["null", "integer"]
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": ["null", "string"]
+      },
+      "descript": {
+        "type": ["null", "string"]
+      },
+      "type": {
+        "type": ["null", "string"]
+      },
+      "isrequired": {
+        "type": ["null", "number"]
+      },
+      "perstag": {
+        "type": ["null", "string"]
+      },
+      "defvalue": {
+        "type": ["null", "string"]
+      },
+      "show_in_list": {
+        "type": ["null", "number"]
+      },
+      "rows": {
+        "type": ["null", "number"]
+      },
+      "cols": {
+        "type": ["null", "number"]
+      },
+      "visible": {
+        "type": ["null", "number"]
+      },
+      "service": {
+        "type": ["null", "string"]
+      },
+      "ordernum": {
+        "type": ["null", "number"]
+      },
+      "cdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "udate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "id": {
+        "type": ["null", "number"]
+      }
     }
   }
-}
+  

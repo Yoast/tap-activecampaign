@@ -1,26 +1,27 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "cdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "defduration": {
-      "type": ["null", "integer"]
-    },
-    "id": {
-      "type": ["null", "integer"]
-    },
-    "status": {
-      "type": ["null", "integer"]
-    },
-    "title": {
-      "type": ["null", "string"]
-    },
-    "udate": {
-      "type": ["null", "string"],
-      "format": "date-time"
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "cdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "defduration": {
+        "type": ["null", "number"]
+      },
+      "id": {
+        "type": ["null", "number"]
+      },
+      "status": {
+        "type": ["null", "number"]
+      },
+      "title": {
+        "type": ["null", "string"]
+      },
+      "udate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      }
     }
   }
-}
+  

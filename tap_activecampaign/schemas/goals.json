@@ -1,31 +1,32 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "blockid": {
-      "type": ["null", "integer"]
-    },
-    "seriesid": {
-      "type": ["null", "integer"]
-    },
-    "name": {
-      "type": ["null", "string"]
-    },
-    "cdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "dirty_stats": {
-      "type": ["null", "integer"]
-    },
-    "id": {
-      "type": ["null", "integer"]
-    },
-    "automation": {
-      "type": ["null", "integer"]
-    },
-    "automation_block": {
-      "type": ["null", "integer"]
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "blockid": {
+        "type": ["null", "number"]
+      },
+      "seriesid": {
+        "type": ["null", "number"]
+      },
+      "name": {
+        "type": ["null", "string"]
+      },
+      "cdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "dirty_stats": {
+        "type": ["null", "number"]
+      },
+      "id": {
+        "type": ["null", "number"]
+      },
+      "automation": {
+        "type": ["null", "number"]
+      },
+      "automation_block": {
+        "type": ["null", "number"]
+      }
     }
   }
-}
+  

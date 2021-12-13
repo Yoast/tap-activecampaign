@@ -1,112 +1,113 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "hash": {
-      "type": ["null", "string"]
-    },
-    "owner": {
-      "type": ["null", "integer"]
-    },
-    "contact": {
-      "type": ["null", "integer"]
-    },
-    "organization": {
-      "type": ["null", "integer"]
-    },
-    "group": {
-      "type": ["null", "integer"]
-    },
-    "stage": {
-      "type": ["null", "integer"]
-    },
-    "title": {
-      "type": ["null", "string"]
-    },
-    "description": {
-      "type": ["null", "string"]
-    },
-    "percent": {
-      "anyOf": [
-        {
-          "type": "null"
-        },
-        {
-          "type": "number",
-          "multipleOf": 1e-8
-        }
-      ]
-    },
-    "cdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "mdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "nextdate": {
-      "type": ["null", "string"]
-    },
-    "nexttaskid": {
-      "type": ["null", "integer"]
-    },
-    "value": {
-      "anyOf": [
-        {
-          "type": "null"
-        },
-        {
-          "type": "number",
-          "multipleOf": 1e-8
-        }
-      ]
-    },
-    "currency": {
-      "type": ["null", "string"]
-    },
-    "win_probability": {
-      "anyOf": [
-        {
-          "type": "null"
-        },
-        {
-          "type": "number",
-          "multipleOf": 1e-8
-        }
-      ]
-    },
-    "win_probability_mdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "status": {
-      "type": ["null", "integer"]
-    },
-    "activitycount": {
-      "type": ["null", "integer"]
-    },
-    "nextdealid": {
-      "type": ["null", "integer"]
-    },
-    "edate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "id": {
-      "type": ["null", "integer"]
-    },
-    "is_disabled": {
-      "type": ["null", "boolean"]
-    },
-    "next_task": {
-      "type": ["null", "integer"]
-    },
-    "account": {
-      "type": ["null", "integer"]
-    },
-    "customer_account": {
-      "type": ["null", "integer"]
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "hash": {
+        "type": ["null", "string"]
+      },
+      "owner": {
+        "type": ["null", "number"]
+      },
+      "contact": {
+        "type": ["null", "number"]
+      },
+      "organization": {
+        "type": ["null", "number"]
+      },
+      "group": {
+        "type": ["null", "number"]
+      },
+      "stage": {
+        "type": ["null", "number"]
+      },
+      "title": {
+        "type": ["null", "string"]
+      },
+      "description": {
+        "type": ["null", "string"]
+      },
+      "percent": {
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "number",
+            "multipleOf": 1e-8
+          }
+        ]
+      },
+      "cdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "mdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "nextdate": {
+        "type": ["null", "string"]
+      },
+      "nexttaskid": {
+        "type": ["null", "number"]
+      },
+      "value": {
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "number",
+            "multipleOf": 1e-8
+          }
+        ]
+      },
+      "currency": {
+        "type": ["null", "string"]
+      },
+      "win_probability": {
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "number",
+            "multipleOf": 1e-8
+          }
+        ]
+      },
+      "win_probability_mdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "status": {
+        "type": ["null", "number"]
+      },
+      "activitycount": {
+        "type": ["null", "number"]
+      },
+      "nextdealid": {
+        "type": ["null", "number"]
+      },
+      "edate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "id": {
+        "type": ["null", "number"]
+      },
+      "is_disabled": {
+        "type": ["null", "boolean"]
+      },
+      "next_task": {
+        "type": ["null", "number"]
+      },
+      "account": {
+        "type": ["null", "number"]
+      },
+      "customer_account": {
+        "type": ["null", "number"]
+      }
     }
   }
-}
+  

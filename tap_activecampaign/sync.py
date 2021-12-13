@@ -347,7 +347,7 @@ def sync(client, config, catalog, state):
     LOGGER.info('last/currently syncing stream: {}'.format(last_stream))
     # Hard code the streams we want
     selected_streams = [
-            "campaigns"]
+            "campaign_links"]
     # Comment this out since current implementation has no selected streams
     # for stream in catalog.get_selected_streams(state):
         # selected_streams.append(stream.stream)

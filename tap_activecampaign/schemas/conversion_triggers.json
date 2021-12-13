@@ -1,38 +1,39 @@
 {
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "conversion": {
-      "type": ["null", "integer"]
-    },
-    "trigger_type": {
-      "type": ["null", "string"]
-    },
-    "modifier": {
-      "type": ["null", "string"]
-    },
-    "value": {
-      "type": ["null", "string"]
-    },
-    "dynamic": {
-      "type": ["null", "integer"]
-    },
-    "retroactive": {
-      "type": ["null", "integer"]
-    },
-    "cdate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "udate": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "automation_block": {
-      "type": ["null", "integer"]
-    },
-    "id": {
-      "type": ["null", "integer"]
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "conversion": {
+        "type": ["null", "number"]
+      },
+      "trigger_type": {
+        "type": ["null", "string"]
+      },
+      "modifier": {
+        "type": ["null", "string"]
+      },
+      "value": {
+        "type": ["null", "string"]
+      },
+      "dynamic": {
+        "type": ["null", "number"]
+      },
+      "retroactive": {
+        "type": ["null", "number"]
+      },
+      "cdate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "udate": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      },
+      "automation_block": {
+        "type": ["null", "number"]
+      },
+      "id": {
+        "type": ["null", "number"]
+      }
     }
   }
-}
+  

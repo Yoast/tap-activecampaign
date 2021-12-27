@@ -400,28 +400,25 @@ def sync(client, config, catalog, state):
     for stream_name, endpoint_config in STREAMS.items():
         LOGGER.info('~~~~~Made it to sync.py for loop~~~~~')
         if stream_name in selected_streams:
-            try:
-                LOGGER.info('START Syncing: {}'.format(stream_name))
-                write_schema(catalog, stream_name)
-                update_currently_syncing(state, stream_name)
-                path = endpoint_config.get('path', stream_name)
-                bookmark_field = next(iter(endpoint_config.get('replication_keys', [])), None)
-                total_records = sync_endpoint(
-                    client=client,
-                    catalog=catalog,
-                    state=state,
-                    start_date=start_date,
-                    stream_name=stream_name,
-                    path=path,
-                 endpoint_config=endpoint_config,
-                    bookmark_field=bookmark_field,
-                    selected_streams=selected_streams)
+            LOGGER.info('START Syncing: {}'.format(stream_name))
+            write_schema(catalog, stream_name)
+            update_currently_syncing(state, stream_name)
+            path = endpoint_config.get('path', stream_name)
+            bookmark_field = next(iter(endpoint_config.get('replication_keys', [])), None)
+            total_records = sync_endpoint(
+                client=client,
+                catalog=catalog,
+                state=state,
+                start_date=start_date,
+                stream_name=stream_name,
+                path=path,
+                endpoint_config=endpoint_config,
+                bookmark_field=bookmark_field,
+                selected_streams=selected_streams)
 
-                update_currently_syncing(state, None)
-                LOGGER.info('FINISHED Syncing: {}, total_records: {}'.format(
-                    stream_name,
-                    total_records))
-            except:
-                LOGGER.info('~~~~~EXCEPTION THROWN IN SYNC.PY, stream name: {}~~~~~'.format(stream_name))
+            update_currently_syncing(state, None)
+            LOGGER.info('FINISHED Syncing: {}, total_records: {}'.format(
+                stream_name,
+                total_records))
         else:
-            LOGGER.info('FAILED to sync: {}'.format(stream_name))
+            LOGGER.info('Did not sync: {}'.format(stream_name))

@@ -23,8 +23,8 @@ def do_discover():
     LOGGER.info('~~~~~Made it out of discover function call~~~~~')
     LOGGER.info('catalog data: {}'.format(catalog))
     # json.dump(catalog.to_dict(), sys.stdout, indent=2)
-    catalog_string = json.dumps(catalog.to_dict(), indent=2)
-    LOGGER.info('catalog string: {}'.format(catalog_string))
+    # catalog_string = json.dumps(catalog.to_dict(), indent=2)
+    # LOGGER.info('catalog string: {}'.format(catalog_string)) # Prints the whole catalog, very large output
     LOGGER.info('Finished discover')
     # return catalog_string
     return catalog

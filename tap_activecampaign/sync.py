@@ -348,8 +348,7 @@ def sync(client, config, catalog, state):
     # Hard code the streams we want
     selected_streams = ["tasks", 
             "contact_conversions", 
-            "deal_activities", 
-            "contacts", 
+            "deal_activities",
             "contact_lists", 
             "deal_custom_field_values", 
             "templates",

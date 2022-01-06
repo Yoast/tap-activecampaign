@@ -356,22 +356,17 @@ def sync(client, config, catalog, state):
             "conversions",
             "ecommerce_order_activities",
             "contact_data", 
-            "contact_deals",
-            "calendars", 
+            "contact_deals", 
             "forms", 
             "contact_automations",
             "saved_responses",
             "site_messages", 
             "ecommerce_orders", 
             "messages", 
-            "contact_custom_field_values", 
-            "account_contacts", 
-            "email_activities", 
-            "automations", 
-            "campaign_links", 
+            "contact_custom_field_values",  
+            "email_activities",   
             "automation_blocks", 
             "bounce_logs", 
-            "account_custom_field_values",
             "sms",
             "activities",
             "conversion_triggers",
@@ -383,11 +378,9 @@ def sync(client, config, catalog, state):
             "contact_emails",
             "ecommerce_customers", 
             "contact_tags", 
-            "accounts",
             "deals", 
             "deal_groups",
-            "deal_stages", 
-            "campaigns"]
+            "deal_stages"]
     # Comment this out since current implementation has no selected streams
     # for stream in catalog.get_selected_streams(state):
         # selected_streams.append(stream.stream)

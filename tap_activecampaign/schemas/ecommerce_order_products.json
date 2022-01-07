@@ -21,15 +21,7 @@
         "type": ["null", "string"]
       },
       "price": {
-        "anyOf": [
-            {
-                "type": "null"
-            },
-            {
-                "type": "number",
-                "multipleOf": 1e-8
-            }
-        ]
+        "type": ["null", "number"]
       },
       "quantity": {
         "type": ["null", "number"]
@@ -63,4 +55,3 @@
       }
     }
   }
-  

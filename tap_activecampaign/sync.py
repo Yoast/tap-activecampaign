@@ -346,39 +346,9 @@ def sync(client, config, catalog, state):
     last_stream = singer.get_currently_syncing(state)
     LOGGER.info('last/currently syncing stream: {}'.format(last_stream))
     # Hard code the streams we want
-    selected_streams = ["tasks", 
-            "contact_conversions", 
-            "deal_activities",
-            "contact_lists", 
-            "deal_custom_field_values", 
-            "templates",
-            "conversions",
-            "ecommerce_order_activities",
-            "contact_data", 
-            "contact_deals", 
-            "forms", 
-            "saved_responses",
-            "site_messages", 
-            "ecommerce_orders", 
-            "messages", 
-            "contact_custom_field_values",  
-            "email_activities",   
-            "automation_blocks", 
-            "bounce_logs", 
-            "sms",
-            "activities",
-            "conversion_triggers",
-            "lists", 
-            "scores", 
-            "deal_custom_fields", 
-            "ecommerce_connections",
-            "configs", 
-            "contact_emails",
-            "ecommerce_customers", 
-            "contact_tags", 
-            "deals", 
-            "deal_groups",
-            "deal_stages"]
+    selected_streams = [
+            "ecommerce_orders"
+    ]
     # Comment this out since current implementation has no selected streams
     # for stream in catalog.get_selected_streams(state):
         # selected_streams.append(stream.stream)

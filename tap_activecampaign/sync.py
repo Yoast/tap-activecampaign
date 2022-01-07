@@ -357,7 +357,6 @@ def sync(client, config, catalog, state):
             "contact_data", 
             "contact_deals", 
             "forms", 
-            "contact_automations",
             "saved_responses",
             "site_messages", 
             "ecommerce_orders", 

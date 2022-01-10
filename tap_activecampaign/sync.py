@@ -347,6 +347,15 @@ def sync(client, config, catalog, state):
     LOGGER.info('last/currently syncing stream: {}'.format(last_stream))
     # Hard code the streams we want
     selected_streams = [
+            "account_contacts",
+            "account_custom_field_values",
+            "accounts",
+            "calendars",
+            "campaign_links",
+            "campaigns",
+            "ecommerce_connections",
+            "ecommerce_customers", 
+            "ecommerce_order_activities",
             "ecommerce_orders"
     ]
     # Comment this out since current implementation has no selected streams

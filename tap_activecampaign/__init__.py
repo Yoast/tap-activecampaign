@@ -32,7 +32,6 @@ def do_discover():
 
 @singer.utils.handle_top_exception(LOGGER)
 def main():
-    LOGGER.info('~~~~~Made it to init.py main~~~~~')
     parsed_args = singer.utils.parse_args(REQUIRED_CONFIG_KEYS)
 
     with ActiveCampaignClient(parsed_args.config['api_url'],
@@ -41,18 +40,15 @@ def main():
 
         state = {}
         if parsed_args.state:
-            LOGGER.info('~~~~~Made it to init.py state if statement~~~~~')
             state = parsed_args.state
 
         if parsed_args.discover:
-            LOGGER.info('~~~~~Made it to init.py discocver if statement~~~~~')
             discovered_catalog = do_discover()
             sync(client=client,
                  config=parsed_args.config,
                  catalog=discovered_catalog,
                  state=state)
         elif parsed_args.catalog:
-            LOGGER.info('~~~~~Made it to init.py else catalog statement~~~~~')
             sync(client=client,
                  config=parsed_args.config,
                  catalog=parsed_args.catalog,

@@ -350,6 +350,7 @@ def sync(client, config, catalog, state):
             "account_contacts",
             "account_custom_field_values",
             "accounts",
+            "automations",
             "calendars",
             "campaign_links",
             "campaigns",

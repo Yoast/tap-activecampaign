@@ -370,7 +370,6 @@ def sync(client, config, catalog, state):
 
     # Loop through endpoints in selected_streams
     for stream_name, endpoint_config in STREAMS.items():
-        LOGGER.info('~~~~~Made it to sync.py for loop~~~~~')
         if stream_name in selected_streams:
             LOGGER.info('START Syncing: {}'.format(stream_name))
             write_schema(catalog, stream_name)

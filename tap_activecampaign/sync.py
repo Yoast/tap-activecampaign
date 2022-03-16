@@ -82,6 +82,7 @@ def process_records(catalog, #pylint: disable=too-many-branches
                         record,
                         schema,
                         stream_metadata)
+                    LOGGER.info(f"~~~~~~Record: {transformed_record}")
                 except Exception as err:
                     LOGGER.error('Transformer Error: {}'.format(err))
                     LOGGER.error('Stream: {}, record: {}'.format(stream_name, record))

@@ -82,7 +82,6 @@ def process_records(catalog, #pylint: disable=too-many-branches
                         record,
                         schema,
                         stream_metadata)
-                    LOGGER.info(f"~~~~~~Record: {transformed_record}")
                 except Exception as err:
                     LOGGER.error('Transformer Error: {}'.format(err))
                     LOGGER.error('Stream: {}, record: {}'.format(stream_name, record))
@@ -347,7 +346,17 @@ def sync(client, config, catalog, state):
     LOGGER.info('last/currently syncing stream: {}'.format(last_stream))
     # Hard code the streams we want
     selected_streams = [
-            "automations"
+            "account_contacts",
+            "account_custom_field_values",
+            "accounts",
+            "automations",
+            "calendars",
+            "campaign_links",
+            "campaigns",
+            "ecommerce_connections",
+            "ecommerce_customers", 
+            "ecommerce_order_activities",
+            "ecommerce_orders"
     ]
     # Comment this out since current implementation has no selected streams
     # for stream in catalog.get_selected_streams(state):

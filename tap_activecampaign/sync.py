@@ -69,7 +69,7 @@ def process_records(catalog, #pylint: disable=too-many-branches
     schema = stream.schema.to_dict()
     stream_metadata = metadata.to_map(stream.metadata)
 
-    with metrics.record_counter(stream_name) as counter:
+    with s.record_counter(stream_name) as counter:
         for record in records:
             # If child object, add parent_id to record
             if parent_id and parent:
@@ -167,11 +167,11 @@ def sync_endpoint(
         querystring = None
         querystring = '&'.join(['%s=%s' % (key, value) for (key, value) in params.items()])
 
-        LOGGER.info('URL for Stream {}: {}{}{}'.format(
-            stream_name,
-            client.base_url,
-            path,
-            '?{}'.format(querystring) if params else ''))
+        # LOGGER.info('URL for Stream {}: {}{}{}'.format(
+        #     stream_name,
+        #     client.base_url,
+        #     path,
+        #     '?{}'.format(querystring) if params else ''))
 
         # API request data
         data = {}
@@ -242,8 +242,8 @@ def sync_endpoint(
             last_datetime=last_datetime,
             parent=parent,
             parent_id=parent_id)
-        LOGGER.info('Stream {}, batch processed {} records'.format(
-            stream_name, record_count))
+        # LOGGER.info('Stream {}, batch processed {} records'.format(
+        #     stream_name, record_count))
         endpoint_total = endpoint_total + record_count
 
         # Loop thru parent batch records for each children objects (if should stream)
@@ -340,24 +340,13 @@ def update_currently_syncing(state, stream_name):
 
 def sync(client, config, catalog, state):
     start_date = config.get('start_date')
-    LOGGER.info('~~~~~Made it to sync.py beginning~~~~~')
     # Get selected_streams from catalog, based on state last_stream
     #   last_stream = Previous currently synced stream, if the load was interrupted
     last_stream = singer.get_currently_syncing(state)
     LOGGER.info('last/currently syncing stream: {}'.format(last_stream))
     # Hard code the streams we want
     selected_streams = [
-            "account_contacts",
-            "account_custom_field_values",
-            "accounts",
-            "automations",
-            "calendars",
-            "campaign_links",
-            "campaigns",
-            "ecommerce_connections",
-            "ecommerce_customers", 
-            "ecommerce_order_activities",
-            "ecommerce_orders"
+            "automations"
     ]
     # Comment this out since current implementation has no selected streams
     # for stream in catalog.get_selected_streams(state):
@@ -365,7 +354,6 @@ def sync(client, config, catalog, state):
     LOGGER.info('selected_streams: {}'.format(selected_streams))
 
     if not selected_streams or selected_streams == []:
-        LOGGER.info('~~~~~Made it to sync.py empty stream if statement~~~~~')
         return
 
     # Loop through endpoints in selected_streams
